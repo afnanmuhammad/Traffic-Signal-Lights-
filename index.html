@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal Lights | Premium Design</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="dashboard">
+      <h1>Traffic Control System</h1>
+      <div class="traffic-light-container">
+        <!-- <div class="status-wrap">
+          <div id="statusText" class="status-text">Stop</div>
+        </div> -->
+        <div class="traffic-light">
+          <!-- Red / Angry -->
+          <div id="red" class="light red">
+            <div class="horns">
+              <svg viewBox="0 0 100 30">
+                <path d="M15,25 Q5,5 25,10" fill="#e11d21" />
+                <path d="M85,25 Q95,5 75,10" fill="#e11d21" />
+              </svg>
+            </div>
+            <div class="face">
+              <svg viewBox="0 0 100 100">
+                <!-- Angry Eyebrows -->
+                <path
+                  d="M25,35 Q35,30 45,40"
+                  stroke="#1a1a1b"
+                  stroke-width="4"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <path
+                  d="M75,35 Q65,30 55,40"
+                  stroke="#1a1a1b"
+                  stroke-width="4"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+                <!-- Eyes -->
+                <circle cx="35" cy="50" r="6" fill="#1a1a1b" />
+                <circle cx="65" cy="50" r="6" fill="#1a1a1b" />
+                <!-- Frown -->
+                <path
+                  d="M35,75 Q50,65 65,75"
+                  stroke="#1a1a1b"
+                  stroke-width="4"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="label">Stop</div>
+          </div>
+
+          <!-- Yellow / Neutral -->
+          <div id="yellow" class="light yellow">
+            <div class="face">
+              <svg viewBox="0 0 100 100">
+                <circle cx="35" cy="45" r="6" fill="#1a1a1b" />
+                <circle cx="65" cy="45" r="6" fill="#1a1a1b" />
+                <line
+                  x1="35"
+                  y1="70"
+                  x2="65"
+                  y2="70"
+                  stroke="#1a1a1b"
+                  stroke-width="5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="label">Ready</div>
+          </div>
+
+          <!-- Green / Happy -->
+          <div id="green" class="light green">
+            <div class="face">
+              <svg viewBox="0 0 100 100">
+                <circle cx="35" cy="45" r="6" fill="#1a1a1b" />
+                <circle cx="65" cy="45" r="6" fill="#1a1a1b" />
+                <path
+                  d="M30,65 Q50,85 70,65"
+                  stroke="#1a1a1b"
+                  stroke-width="5"
+                  fill="none"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </div>
+            <div class="label">Go</div>
+          </div>
+        </div>
+        <div class="controls">
+          <button id="toggleBtn">Start Automation</button>
+        </div>
+      </div>
+
+      <!-- global status removed; per-light labels are shown next to each light -->
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
